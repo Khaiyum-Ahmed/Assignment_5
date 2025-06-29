@@ -7,16 +7,88 @@
     <title>Donate Bangladesh</title>
     <!-- css -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="styles/responsive.css">
 
     <!-- daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-<h1 class="text-center">welcome</h1>
+<body class="bg-[#F9F7F3] lexend-primary-fonts">
+    <header class="max-w-[1140px] mx-auto">
+
+        <!-- nav bar start -->
+
+        <div class="max-w-[1140px] mx-auto navbar py-6">
+            <div class="navbar-start blog">
+                <button class="rounded-lg cursor-pointer bg-[#B4F461] text-[#111111] text-xl font-semibold px-8 py-3 ">
+                    Blog
+                </button>
+            </div>
+
+            <div class="navbar-center md:flex md:items-center">
+                <img src="assets/logo.png" alt="logo">
+                <a class="text-[#111111] text-xl font-semibold ml-4" href="#"> Donate Bangladesh</a>
+            </div>
+
+            <div class="navbar-end">
 
 
+                <div class="stat flex items-center justify-end">
+
+                    <div class="space-x-2 stat-value flex items-center text-[rgba(17,17,17,.7)] text-xl font-medium">
+                        <img src="assets/coin.png" alt="coin"> 5500 <span
+                            class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- nav bar end -->
+
+    </header>
+    <main class="bg-[#FFFFFF]">
+        <section class="main-container max-w-[1140px] mx-auto py-20">
+
+            <!-- donation button and history -->
+
+            <div class="mb-8 text-center bg-white p-6 space-x-4">
+                <button
+                    class="bg-[#B4F461] rounded-lg py-4 px-8 text-xl font-semibold cursor-pointer text-[#111]">Donation</button>
+                <button
+                    class="bg-transparent border border-[rgba(17,17,17,.3)] rounded-lg py-4 px-8 text-xl cursor-pointer font-medium text-[rgba(17,17,17,.7)]">History</button>
+            </div>
+
+            <!-- donation card section start -->
+
+            <div class="hero bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                        class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Box Office News!</h1>
+                        <p class="py-6">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- donation card section end -->
+
+
+
+        </section>
+
+    </main>
+
+    <script src="js/function.js"></script>
+    <script src="js/donate.js"></script>
 </body>
 
 </html>
