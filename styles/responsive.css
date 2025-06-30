@@ -4,6 +4,16 @@
     .navbar-center > a{
         display: none;
     }
+    .hero-img, .hero-bottom-content{
+        width: 330px;
+                
+        /* display: flex;
+        align-items: center; */
+    }
    
+    
+   .hero-content{
+    flex-direction: column;
+   }
   
 }
