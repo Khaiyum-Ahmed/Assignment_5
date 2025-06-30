@@ -9,6 +9,30 @@ document.getElementById('blog-button').addEventListener('click', function(){
 });
 
 
+// donation button and history button....
+
+// history button...
+
+document.getElementById('history-button').addEventListener('click', function(){
+    document.getElementById('history-button').classList.remove('default');
+    document.getElementById('history-button').classList.add('active');
+    document.getElementById('donation-button').classList.remove('active');
+    document.getElementById('donation-button').classList.add('default');
+
+    
+});
+
+document.getElementById('donation-button').addEventListener('click', function(){
+    document.getElementById('donation-button').classList.remove('default');
+    document.getElementById('donation-button').classList.add('active');
+    document.getElementById('history-button').classList.remove('active');
+    document.getElementById('history-button').classList.add('default');
+    
+    
+});
+
+
+
 
 // 
 // getInputFieldValue('input-donate-noakhali')
@@ -61,5 +85,12 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
         return;
     });
     document.getElementById('input-donate-noakhali').value = '';
+
+    // history.....
+
+    const div = document.createElement('div');
+
+
+
 
 })

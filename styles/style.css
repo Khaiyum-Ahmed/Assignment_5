@@ -9,3 +9,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.active{
+ background-color: #B4F461;
+ border-radius: 8px;
+ padding: 16px 32px;
+ font-size: 20px;
+ font-weight: 700;
+ cursor: pointer;
+ color: #111;
+}
+.default{
+ background-color: transparent;
+ border: 1px solid rgba(17,17,17,.3);
+ border-radius: 8px;
+ padding: 16px 32px;
+ font-size: 20px;
+ font-weight: 600;
+ cursor: pointer;
+ color: rgba(17,17,17,.7);
+}
