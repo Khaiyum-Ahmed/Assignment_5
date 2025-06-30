@@ -96,14 +96,27 @@
                             <input id="input-donate-noakhali"
                                 class="w-full text-base font-light text-[rgba(17,17,17,.4)] p-[18px] rounded-lg border border-[rgba(17,17,17,.1)]"
                                 type="text" placeholder="Write Donation Amount">
-                            
+
                             <button id="noakhali-btn"
-                                class="w-full cursor-pointer mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none">Donate
+                                class="w-full cursor-pointer mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none" onclick="my_modal_1_1.showModal()">Donate
                                 Now</button>
 
                             <!-- modal successful -->
 
-                            
+                            <dialog id="my_modal_1_1" class="modal text-center">
+                                <div class="modal-box space-y-1">
+                                    <h3 class="text-2xl text-[#111] font-extrabold mb-2">Congrates!</h3>
+                                    <img class="w-7 mx-auto" src="assets/coin.png" alt="">
+                                    <p class="py-4 text-base font-light text-[rgba(17,17,17,.4)]">You Have Donated for HumanKind</p>
+                                    <h3 class="text-xl text-[#111] font-extrabold">Successful</h3>
+                                    <div class="modal-action justify-center">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
 
                         </div>
                     </div>
@@ -121,7 +134,8 @@
                             <div
                                 class="space-x-2 stat-value flex items-center text-[rgba(17,17,17,.7)] text-xl font-medium mb-4">
                                 <img src="assets/coin.png" alt="coin">
-                                <p id="feni-balance" >600</p> <span class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
+                                <p id="feni-balance">600</p> <span
+                                    class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
                             </div>
                             <!-- donation content -->
                             <h1 class="text-xl font-bold text-[#111]">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -141,11 +155,26 @@
                                 class="w-full text-base font-light text-[rgba(17,17,17,.4)] p-[18px] rounded-lg border border-[rgba(17,17,17,.1)]"
                                 type="text" placeholder="Write Donation Amount">
                             <button id="feni-button"
-                                class="w-full mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none">Donate
+                                class="w-full mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none" onclick="my_modal_1_2.showModal()">Donate
                                 Now</button>
 
                             <!-- modal successful -->
 
+                            <dialog id="my_modal_1_2" class="modal text-center">
+                                <div class="modal-box space-y-1">
+                                    <h3 class="text-2xl text-[#111] font-extrabold mb-2">Congrates!</h3>
+                                    <img class="w-7 mx-auto" src="assets/coin.png" alt="">
+                                    <p class="py-4 text-base font-light text-[rgba(17,17,17,.4)]">You Have Donated for HumanKind</p>
+                                    <h3 class="text-xl text-[#111] font-extrabold">Successful</h3>
+                                    <div class="modal-action justify-center">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                            
                         </div>
                     </div>
                 </div>
@@ -162,7 +191,8 @@
                             <div
                                 class="space-x-2 stat-value flex items-center text-[rgba(17,17,17,.7)] text-xl font-medium mb-4">
                                 <img src="assets/coin.png" alt="coin">
-                                <p id="aid-injured-balance">2400</p> <span class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
+                                <p id="aid-injured-balance">2400</p> <span
+                                    class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
                             </div>
                             <!-- donation content -->
                             <h1 class="text-xl font-bold text-[#111]">Aid for Injured in the Quota Movement</h1>
@@ -179,34 +209,29 @@
                             <input id="input-donate-aid"
                                 class="w-full text-base font-light text-[rgba(17,17,17,.4)] p-[18px] rounded-lg border border-[rgba(17,17,17,.1)]"
                                 type="text" placeholder="Write Donation Amount">
-                            <button id="aid-injured-button"
+                            <!-- <button id="aid-injured-button"
                                 class="w-full mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none">Donate
-                                Now</button>
-
-                            <!-- <button id="aid-btn"
-                                class="w-full cursor-pointer mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none"
-                                onclick="my_modal_1.showModal()">Donate Now</button> -->
+                                Now</button> -->
+                            <button id="aid-injured-button" class=" w-full mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none" onclick="my_modal_1.showModal()">Donate Now</button>
 
                             <!-- modal successful -->
 
-                            <!-- onclick="my_modal_1.showModal()" -->
                             <!-- Open the modal using ID.showModal() method -->
-
-                            <!-- <dialog id="my_modal_1" class="modal rounded-3xl">
-                                <div class="modal-box text-center space-y-3">
-                                    <h3 class="text-2xl font-extrabold text-[#111]">Congrates!</h3>
-                                    <img class="w-7 m-auto" src="assets/coin.png" alt="coin">
-                                    <p class="py-4">You Have Donated For HumanKind</p>
-                                    <h3 class="text-lg font-bold text-[#111]">Successfully</h3>
-
-                                    <button id="noakhali-btn-close" class="btn">Close Confirmation</button>
-
+                            
+                            <dialog id="my_modal_1" class="modal text-center">
+                                <div class="modal-box space-y-1">
+                                    <h3 class="text-2xl text-[#111] font-extrabold mb-2">Congrates!</h3>
+                                    <img class="w-7 mx-auto" src="assets/coin.png" alt="">
+                                    <p class="py-4 text-base font-light text-[rgba(17,17,17,.4)]">You Have Donated for HumanKind</p>
+                                    <h3 class="text-xl text-[#111] font-extrabold">Successful</h3>
+                                    <div class="modal-action justify-center">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close Confirmation</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </dialog> -->
-
-
-                            <!-- Open the modal using ID.showModal() method -->
-
+                            </dialog>
 
 
                         </div>

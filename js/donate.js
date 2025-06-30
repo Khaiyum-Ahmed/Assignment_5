@@ -65,12 +65,14 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
     if(isNaN(donateAmount)){
         alert('Invalid Donation, please try again');
         document.getElementById('input-donate-noakhali').value = '';
+        document.getElementById('my_modal_1_1').classList.add('hidden');
         return;
     }
 
     else if(donateAmount > mainBalance){
         alert('Insufficient Balance to Donate');
         document.getElementById('input-donate-noakhali').value = '';
+        document.getElementById('my_modal_1_1').classList.add('hidden');
         return;
     }
 
@@ -192,6 +194,7 @@ document.getElementById('aid-injured-button').addEventListener('click', function
     if(isNaN(donateAmount)){
         alert('Invalid Donation, please try again');
         document.getElementById('input-donate-aid').value = '';
+        
         return;
     }
 
