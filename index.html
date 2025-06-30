@@ -23,7 +23,8 @@
         <div class="max-w-[1140px] mx-auto navbar py-6">
             <!-- blog section -->
             <div class="navbar-start blog">
-                <button id="blog-button" class="rounded-lg cursor-pointer bg-[#B4F461] text-[#111111] text-xl font-semibold px-8 py-3 ">
+                <button id="blog-button"
+                    class="rounded-lg cursor-pointer bg-[#B4F461] text-[#111111] text-xl font-semibold px-8 py-3 ">
                     Blog
                 </button>
             </div>
@@ -41,8 +42,9 @@
                 <div class="stat flex items-center justify-end">
 
                     <div class="space-x-2 stat-value flex items-center text-[rgba(17,17,17,.7)] text-xl font-medium">
-                        <img src="assets/coin.png" alt="coin"> 5500 <span
-                            class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
+                        <img src="assets/coin.png" alt="coin">
+                        <p id="main-balance">5500</p> <span class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2">
+                            BDT</span>
                     </div>
                 </div>
 
@@ -66,7 +68,7 @@
             </div>
 
             <!-- donation card section start -->
-    
+
             <div>
                 <!-- noakhali donation -->
                 <div class="hero p-3 border border-[rgba(17,17,17,.1)] rounded-2xl mb-8">
@@ -76,9 +78,10 @@
                         </div>
                         <div class="hero-bottom-content w-[522px]">
                             <!-- total balance of donation -->
-                            <div id="noakhali-balance"
+                            <div
                                 class="space-x-2 stat-value flex items-center text-[rgba(17,17,17,.7)] text-xl font-medium mb-4">
-                                <img src="assets/coin.png" alt="coin"> 50 <span
+                                <img src="assets/coin.png" alt="coin">
+                                <p id="noakhali-balance">50</p> <span
                                     class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
                             </div>
                             <!-- donation content -->
@@ -95,11 +98,33 @@
                             <input id="input-donate-noakhali"
                                 class="w-full text-base font-light text-[rgba(17,17,17,.4)] p-[18px] rounded-lg border border-[rgba(17,17,17,.1)]"
                                 type="text" placeholder="Write Donation Amount">
-                            <button id="noakhali-btn"
+                            <!-- <button id="noakhali-btn"
                                 class="w-full mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none">Donate
-                                Now</button>
+                                Now</button> -->
+
+                                <button id="noakhali-btn" class="w-full cursor-pointer mt-4 font-semibold text-xl text-[#111] py-4 bg-[#B4F461] rounded-lg border-none" onclick="my_modal_1.showModal()">Donate Now</button>
+
                         </div>
                     </div>
+
+                    <!-- modal successful -->
+<!-- onclick="my_modal_1.showModal()" -->
+                    <!-- Open the modal using ID.showModal() method -->
+                    
+                    <dialog id="my_modal_1" class="modal rounded-3xl">
+                        <div class="modal-box text-center space-y-3">
+                            <h3 class="text-2xl font-extrabold text-[#111]">Congrates!</h3>
+                            <img class="w-7 m-auto" src="assets/coin.png" alt="coin">
+                            <p class="py-4">You Have Donated For HumanKind</p>
+                            <h3 class="text-lg font-bold text-[#111]">Successfully</h3>
+                           
+                            <button id="noakhali-btn-close" class="btn">Close Confirmation</button>
+                            
+                        </div>
+                    </dialog>
+
+
+
                 </div>
 
                 <!-- feni donation -->
@@ -113,8 +138,8 @@
                             <!-- total balance of donation -->
                             <div
                                 class="space-x-2 stat-value flex items-center text-[rgba(17,17,17,.7)] text-xl font-medium mb-4">
-                                <img src="assets/coin.png" alt="coin"> 600 <span
-                                    class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
+                                <img src="assets/coin.png" alt="coin">
+                                <p>600</p> <span class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
                             </div>
                             <!-- donation content -->
                             <h1 class="text-xl font-bold text-[#111]">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -151,8 +176,8 @@
                             <!-- total balance of donation -->
                             <div
                                 class="space-x-2 stat-value flex items-center text-[rgba(17,17,17,.7)] text-xl font-medium mb-4">
-                                <img src="assets/coin.png" alt="coin"> 2400 <span
-                                    class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
+                                <img src="assets/coin.png" alt="coin">
+                                <p>2400</p> <span class="text-[rgba(17,17,17,.7)] text-xl font-medium ml-2"> BDT</span>
                             </div>
                             <!-- donation content -->
                             <h1 class="text-xl font-bold text-[#111]">Aid for Injured in the Quota Movement</h1>
